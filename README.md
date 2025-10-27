@@ -17,13 +17,13 @@ The goal of this repository is to:
 # Structure
 
 Each folder represents a standalone project or concept area:
-aether-python-labs/
-├── algorithms/ # Sorting, searching, recursion, etc.
-├── data_structures/ # Linked lists, stacks, queues, trees
-├── mini_projects/ # Small real-world Python apps
-├── automation/ # Scripts for automating tasks
-├── experiments/ # Random code experiments and tests
-└── README.md
+aether-python-labs:
+- algorithms/ # Sorting, searching, recursion, etc.
+- data_structures/ # Linked lists, stacks, queues, trees
+- mini_projects/ # Small real-world Python apps
+- automation/ # Scripts for automating tasks
+- experiments/ # Random code experiments and tests
+- README.md
 
 
 ---
