@@ -4,38 +4,50 @@
     
 """
 
-
-
 def byte_converter(number : int):
 
-    if number < 10**3:
-        print(number, "B")
+    if number < 0 :
+        show_negative_number = f"{number} is negative try again!"
+        return show_negative_number 
+
+    elif number < 10**3:
+        return str(number) + "B"
         
     elif 10**3 <= number < 10**6:
-        print(number / 10**3, "KB")
+        return str(number / 10**3) + "KB" 
 
     elif 10**6 <= number < 10**9:
-        print(number / 10**6, "MB")
+        return str(number / 10**6) + "MB" 
 
     elif 10**9 <= number < 10**12:
-        print(number / 10**9, "GB")
+        return str(number / 10**9) + "GB"
 
     elif 10**12 <= number < 10**15:
-        print(number / 10**12, "TB")
+        return str(number / 10**12) + "TB"
 
     elif 10**15 <= number < 10**18:
-        print(number / 10**15, "PB")
+        return str(number / 10**15) + "PB"
 
     elif 10**18 <= number < 10**21:
-        print(number / 10**18, "EB")
+        return str(number / 10**18) + "EB"
 
     elif 10**21 <= number < 10**24:
-        print(number / 10**21, "ZB")
+        return str(number / 10**21) + "ZB"
 
     elif number >= 10**24:
-        print(number / 10**24, "YB")
+        return str(number / 10**24) + "YB"
 
     else:
-        print(number,">= YB")
+        return str(number) + ">= YB"
 
-byte_converter()
+
+
+while True :
+    user_number = int(input("Enter your number :: "))
+    print(byte_converter(user_number))
+    continue_or_not = input("yes or no :: ")
+    if continue_or_not.strip().lower() == "yes" :
+        continue
+    else :
+        break
+    
